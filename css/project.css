@@ -1,0 +1,82 @@
+body {
+  margin: auto;
+  padding: 20px;
+  background-color: blue;
+  width: 100%;
+}
+.in-out {
+  display: flex;
+  gap: 100px;
+}
+
+.icon-text {
+  display: flex;
+  gap: 20px;
+}
+.flag {
+  stroke: black;
+  width: 40px;
+  height: 40px;
+}
+.member {
+  fill: black;
+  width: 40px;
+  height: 40px;
+}
+.dot {
+  border-bottom: 1px dotted #1561f0ec;
+}
+.timeline {
+  display: flex;
+  gap: 30px;
+}
+.timenumber {
+  font-size: 28px;
+  border-radius: 50%;
+  border: 1px solid brown;
+  background-color: rgb(162, 98, 221);
+  color: #fff;
+  width: 50px;
+  padding-left: 7px;
+}
+/*tablet*/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .icon-text {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .in-out {
+    display: block;
+  }
+  .primary {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 20px;
+  }
+  .timeline {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+/*moblie*/
+@media screen and (max-width: 600px) {
+  .icon-text {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .in-out {
+    display: block;
+  }
+  .primary {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 20px;
+  }
+  .timeline {
+    display: grid;
+  }
+}

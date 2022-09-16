@@ -1,0 +1,299 @@
+@media screen and (min-width: 1025px) {
+  #nav-bar {
+    text-align: center;
+    position: relative;
+  }
+  /*chèn thêm ảnh cv*/
+  .imgcv {
+    position: absolute;
+    top: -100%;
+    left: 42%;
+    width: 15%;
+
+    border-radius: 50%;
+    border: 10px solid #fff;
+  }
+  #banner {
+    /*height: 100vh;*/
+    height: 100vh;
+    position: relative;
+    /*thêm ảnh vào banner, dùng background-image để taoj ảnh nền và dùng linear-gradient để màu ảnh được tối màu xuống chút*/
+    background-image: linear-gradient(
+        rgba(8, 8, 8, 0.452),
+        rgba(43, 41, 41, 0.349)
+      ),
+      url("../images/banner.jpg");
+    background-size: cover;
+
+    color: #fff;
+    text-align: center;
+  }
+  .text-banner {
+    position: absolute;
+    font-size: 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /*dịch chuyển chữ lùi lại so với top và right*/
+  }
+  /*tùy chỉnh thông tin, lý lịch,chứng chỉ, dự án*/
+
+  .infor ul {
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  a {
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 30px;
+  }
+
+  .icon {
+    margin-top: 30px;
+  }
+  ul {
+    list-style: none;
+  }
+  /*dùng grid tạo cột cho mục tiêu và thông tin*/
+  .target-personal {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  /*dùng grid để chia cột cho các job*/
+  .job {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  .border-job {
+    border: 1px solid rgb(206, 202, 202);
+    padding: 40px;
+    line-height: 1.6;
+  }
+  /*dùng grid để chia layout bên trong từng job*/
+  .grid-job-icon {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-bottom: 30px;
+
+    margin-top: 30px;
+  }
+  .job-tittle {
+    font-size: 30px;
+  }
+  .job-icon {
+    font-size: 60px;
+    color: #adb5bd;
+  }
+  .job-text {
+    font-size: 20px;
+  }
+  /*điều chỉnh và định dạng lại màu dấu chấm*/
+  ul {
+    list-style: none;
+  }
+  .job ul li::before {
+    content: "\2022";
+    color: #1971c2;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    transform: translate(0, 80%);
+  }
+  /*tùy chỉnh layout trong sở thích bằng flex*/
+  .grid-sothich {
+    display: flex;
+  }
+  /*thêm circle bên ngoài icon*/
+  .ic-megaphone,
+  .ic-strategy,
+  .ic-hotairballoon,
+  .ic-basket {
+    font-size: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    /*căn chỉnh icon vô giữa*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .ic-sothich {
+    padding: 10px;
+
+    text-align: center;
+  }
+  /*định dạng lại thang điểm*/
+  .point-blue {
+    background: #199cdb;
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    margin-right: 10px;
+  }
+  .point-grey {
+    background: #dee2e6;
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    margin-right: 10px;
+  }
+  /*định dạng chứng chỉ-giải thưởng*/
+  .ccgt {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 80px;
+    /*đặt vị trí để thêm border*/
+    position: relative;
+  }
+  /*chia chứng chỉ và dòng text*/
+  .ccdn {
+    display: flex;
+    gap: 30px;
+  }
+  .line-dung {
+    border: 0.5px solid#d6c08d;
+    height: 155px;
+    /*đặt vị trí so với ccgt để thêm border đứng ở giữa, tùy chỉnh vị trí đứng theo left*/
+    position: absolute;
+    left: 50%;
+  }
+
+  .line-giua {
+    border: 0.5px solid #d6c08d;
+    height: 1px;
+    width: 100%;
+    /*đặt vị trí so với ccgt để thêm border ngang ở giữa, tùy chỉnh vị trí theo top*/
+    position: absolute;
+    top: 50%;
+  }
+  /*điều chỉnh lại hình ảnh để phù hợp với kích thước màn hình*/
+  .ccdn img {
+    width: 100%;
+  }
+
+  .du-an {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 34% 33% 33%;
+    gap: 20px;
+  }
+  .du-an img {
+    width: 100%;
+    height: auto;
+  }
+  .nam {
+    background-color: #228be6;
+    color: #fff;
+
+    border-radius: 15px;
+    width: 50px;
+    height: 25px;
+    padding-left: 20%;
+  }
+  .chucvu {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 30px;
+    border-top: 1px solid #adb5bd;
+    width: 100%;
+    padding: 15px;
+  }
+  .area {
+    display: flex;
+    gap: 40px;
+  }
+  .icon-user-1,
+  .icon-lamp {
+    color: #868e96;
+  }
+  table {
+    border-collapse: collapse; /*dùng collapse để loại bỏ bớt đường tale trùng nhau*/
+
+    width: 100%;
+  }
+  td {
+    border-top: 1px solid #adb5bd;
+    padding: 15px;
+  }
+  .tittle-duan {
+    border-top: 1px solid #adb5bd;
+    width: 100%;
+    padding: 15px;
+    padding-left: 25px;
+    font-size: 20px;
+  }
+  /*cho text lên trên cùng*/
+  .cot1 {
+    width: 25%;
+    vertical-align: top;
+  }
+  .cv-canhan,
+  .web-thucung,
+  .web-tintuc {
+    border: 1px solid #adb5bd;
+  }
+  /*footer*/
+  .link-footer {
+    display: flex;
+    gap: 30px;
+    transform: translate(40%, 0);
+  }
+  .icon-facebook-circled,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    font-size: 100%;
+  }
+  a:link,
+  a:visited {
+    font-size: 20px;
+    text-transform: none;
+    text-decoration: none;
+  }
+  /*điều hỉnh link liên kết với project*/
+  .title-link {
+    display: flex;
+  }
+  .title-link a {
+    width: auto;
+    height: 20%;
+  }
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "fontello", sans-serif;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 100%;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+i {
+  color: #2f9cf0d8;
+}
